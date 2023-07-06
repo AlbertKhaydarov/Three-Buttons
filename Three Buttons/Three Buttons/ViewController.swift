@@ -73,7 +73,6 @@ class ViewController: UIViewController {
         ])
     }
     
-    
     func configurationSecondButton() -> UIButton {
         var configuration = UIButton.Configuration.filled()
         var container = AttributeContainer()
@@ -97,9 +96,9 @@ class ViewController: UIViewController {
                                options: [.allowUserInteraction,
                                          .beginFromCurrentState,
                                          UIView.AnimationOptions.curveEaseInOut]) {
-                                    button.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
-                                    button.transform = .identity
-                                }
+                    button.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+                    button.transform = .identity
+                }
             }
         }
         let secondButton = UIButton(configuration: configuration, primaryAction: nil)
@@ -135,7 +134,7 @@ class ViewController: UIViewController {
             self?.showModalController()
         }))
     }
-
+    
     func setupThirdButtonView(thirdButton: UIButton){
         thirdButton.translatesAutoresizingMaskIntoConstraints = false
         
